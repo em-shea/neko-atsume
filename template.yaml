@@ -27,7 +27,7 @@ Resources:
       Events:
         GetCatsAPI:
           # An API endpoint that responds to HTTP GET
-          Type: API
+          Type: Api
           Properties:
-            Path: /cats
+            Path: /
             Method: GET
