@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Neko Atsume API
+Parameters:
+  WordsBucketName:
+    Type: String
+  WordsBucketKey:
+    Type: String
+
+Resources:
+  GetCats:
+  # Returns list of Neko Atsume cats and their attributes
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: GetCats
+      Handler: GetCats.lambda_handler
+      Runtime: python3.7
+      CodeURI: ./GetCats
+      Description: Returns list of Neko Atsume cats and their attributes
+      Timeout: 120
+      Policies:
+       - AWSLambdaExecute
+      Environment:
+        Variables:
+        WORDS_BUCKET_NAME: WordsBucketName
+        WORDS_BUCKET_KEY: WordsBucketKey
+      Events:
+        GetCatsAPI:
+        # An API endpoint that responds to HTTP GET
+        Type: API
+        Properties:
+          Path: /
+          Method: GET

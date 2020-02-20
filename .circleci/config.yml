@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python3
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install awscli
+          command: sudo pip install awscli
+
+      - run:
+          name: Install SAM
+          command: sudo pip install aws-sam
+
+      - run: 
+          name: Deploy with SAM
+          command: sam deploy --stack-name neko-api --s3-bucket neko-atsume --region us-east-1 --capabilities CAPABILITY_IAM --parameter-overrides WordsBucketName=neko-atsume WordsBucketKey=neko-atsume-data.csv
