@@ -18,10 +18,11 @@ def lambda_handler(event, context):
 
     for row in reader:
         # Example image link: https://neko-atsume.s3.amazonaws.com/img/Aluminum+Pins.jpg
-        cat_image = row['CatImage']
-        memento_image = row['MementoImage']
-        cat_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(cat_image)
-        memento_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(memento_image)
+        row['CatImage'] = row['CatImage'].replace(" ", "+")
+        row['MementoImage'] = row['MementoImage'].replace(" ", "+")
+        # memento_image = row['MementoImage']
+        # cat_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(cat_image)
+        # memento_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(memento_image)
         cat_list.append(row)
 
     return {
