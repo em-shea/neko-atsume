@@ -15,7 +15,7 @@ Resources:
       FunctionName: GetCats
       Handler: GetCats.lambda_handler
       Runtime: python3.7
-      CodeURI: ./GetCats
+      CodeUri: ./GetCats
       Description: Returns list of Neko Atsume cats and their attributes
       Timeout: 120
       Policies:
