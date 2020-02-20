@@ -6,7 +6,7 @@ from random import randint
 
 cat_list = None
 
-def get_cats():
+def lambda_handler(event, context):
 
     s3 = boto3.client('s3')
 

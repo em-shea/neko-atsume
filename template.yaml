@@ -22,8 +22,8 @@ Resources:
        - AWSLambdaExecute
       Environment:
         Variables:
-          WORDS_BUCKET_NAME: WordsBucketName
-          WORDS_BUCKET_KEY: WordsBucketKey
+          WORDS_BUCKET_NAME: !Ref WordsBucketName
+          WORDS_BUCKET_KEY: !Ref WordsBucketKey
       Events:
         GetCatsAPI:
           # An API endpoint that responds to HTTP GET
