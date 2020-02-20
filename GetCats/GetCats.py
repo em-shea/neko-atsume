@@ -16,4 +16,4 @@ def get_cats():
     reader = csv.DictReader(stream)
 
     for row in reader:
-        print(reader)
+        print(reader) 
