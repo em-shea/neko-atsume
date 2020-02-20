@@ -26,8 +26,8 @@ Resources:
           WORDS_BUCKET_KEY: WordsBucketKey
       Events:
         GetCatsAPI:
-        # An API endpoint that responds to HTTP GET
-        Type: API
-        Properties:
-          Path: /
-          Method: GET
+          # An API endpoint that responds to HTTP GET
+          Type: API
+          Properties:
+            Path: /
+            Method: GET
