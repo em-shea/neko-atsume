@@ -1,10 +1,11 @@
 import io
 import os
 import csv
+import json
 import boto3
 from random import randint
 
-cat_list = None
+cat_list = []
 
 def lambda_handler(event, context):
 
@@ -16,6 +17,11 @@ def lambda_handler(event, context):
     reader = csv.DictReader(stream)
 
     for row in reader:
+        # Example image link: https://neko-atsume.s3.amazonaws.com/img/Aluminum+Pins.jpg
+        cat_image = row['CatImage']
+        memento_image = row['MementoImage']
+        cat_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(cat_image)
+        memento_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(memento_image)
         cat_list.append(row)
 
     return {
@@ -27,3 +33,11 @@ def lambda_handler(event, context):
         },
         'body': json.dumps(cat_list)
     }
+
+def remove_spaces(file_name):
+
+    for letter in file_name:
+        if letter = " ":
+            letter = "+"
+
+    return file_name
