@@ -18,11 +18,8 @@ def lambda_handler(event, context):
 
     for row in reader:
         # Example image link: https://neko-atsume.s3.amazonaws.com/img/Aluminum+Pins.jpg
-        row['CatImage'] = row['CatImage'].replace(" ", "+")
-        row['MementoImage'] = row['MementoImage'].replace(" ", "+")
-        # memento_image = row['MementoImage']
-        # cat_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(cat_image)
-        # memento_image = "https://neko-atsume.s3.amazonaws.com/img/" + remove_spaces(memento_image)
+        row['CatImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['CatImage'].replace(" ", "+")
+        row['MementoImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['MementoImage'].replace(" ", "+")
         cat_list.append(row)
 
     return {
@@ -34,11 +31,3 @@ def lambda_handler(event, context):
         },
         'body': json.dumps(cat_list)
     }
-
-def remove_spaces(file_name):
-
-    for letter in file_name:
-        if letter = " ":
-            letter = "+"
-
-    return file_name
