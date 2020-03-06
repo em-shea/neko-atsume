@@ -8,14 +8,14 @@ Parameters:
     Type: String
 
 Resources:
-  GetCats:
+  ListCats:
   # Returns list of Neko Atsume cats and their attributes
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: GetCats
-      Handler: GetCats.lambda_handler
+      FunctionName: ListCats
+      Handler: cats.list_cats_handler
       Runtime: python3.7
-      CodeUri: ./GetCats
+      CodeUri: ./api
       Description: Returns list of Neko Atsume cats and their attributes
       Timeout: 120
       Policies:
@@ -25,9 +25,33 @@ Resources:
           WORDS_BUCKET_NAME: !Ref WordsBucketName
           WORDS_BUCKET_KEY: !Ref WordsBucketKey
       Events:
-        GetCatsAPI:
-          # An API endpoint that responds to HTTP GET
+        ListCatsAPI:
+          # An API endpoint that responds to HTTP GET and returns all cats
           Type: Api
           Properties:
             Path: /api/cats
+            Method: GET
+
+  GetCatById:
+  # Returns list of Neko Atsume cats and their attributes
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: GetCatById
+      Handler: cats.get_cats_by_id_handler
+      Runtime: python3.7
+      CodeUri: ./api
+      Description: Returns list of Neko Atsume cats and their attributes
+      Timeout: 120
+      Policies:
+       - AWSLambdaExecute
+      Environment:
+        Variables:
+          WORDS_BUCKET_NAME: !Ref WordsBucketName
+          WORDS_BUCKET_KEY: !Ref WordsBucketKey
+      Events:
+        GetCatByIdAPI:
+          # An API endpoint that responds to HTTP GET and returns cats by id
+          Type: Api
+          Properties:
+            Path: /api/cats/{id}
             Method: GET
