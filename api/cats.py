@@ -20,7 +20,7 @@ def get_cat_by_id_handler(event, context):
 
     response = create_response(status_code, cat_found_response)
 
-    return reponse
+    return response
 
 #cat_id only passed for get_cat_by_id type requests
 def read_s3_data(cat_id=None):
@@ -42,7 +42,7 @@ def read_s3_data(cat_id=None):
     if cat_id is None:
         return 200, cat_list
     else:
-        if len(cat_list) = 1:
+        if len(cat_list) == 1:
             return 200, cat_list[0]
         else:
             error_message = {"error":"Cat not found. Enter an id between 1-66."}
