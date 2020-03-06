@@ -37,7 +37,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: GetCatById
-      Handler: cats.get_cats_by_id_handler
+      Handler: cats.get_cat_by_id_handler
       Runtime: python3.7
       CodeUri: ./api
       Description: Returns list of Neko Atsume cats and their attributes
