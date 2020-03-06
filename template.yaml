@@ -29,5 +29,5 @@ Resources:
           # An API endpoint that responds to HTTP GET
           Type: Api
           Properties:
-            Path: /api
+            Path: /api/cats
             Method: GET

@@ -3,7 +3,6 @@ import os
 import csv
 import json
 import boto3
-from random import randint
 
 cat_list = []
 
