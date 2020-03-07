@@ -53,5 +53,5 @@ Resources:
           # An API endpoint that responds to HTTP GET and returns cats by id
           Type: Api
           Properties:
-            Path: /api/cats/{id}
+            Path: /cats/{id}
             Method: GET
