@@ -29,7 +29,7 @@ Resources:
           # An API endpoint that responds to HTTP GET and returns all cats
           Type: Api
           Properties:
-            Path: /api/cats
+            Path: /cats
             Method: GET
 
   GetCatById:
