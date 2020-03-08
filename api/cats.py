@@ -34,7 +34,7 @@ def read_s3_data(cat_id=None):
 
     cat_list = []
     for row in reader:
-        if cat_id is None or row['CatId'] == cat_id:
+        if cat_id is None or row['CatId'] or row['CatName'] == cat_id:
             # Example image link: https://neko-atsume.s3.amazonaws.com/img/Aluminum+Pins.jpg
             row['CatImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['CatImage'].replace(" ", "+")
             row['MementoImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['MementoImage'].replace(" ", "+")

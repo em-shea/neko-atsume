@@ -33,14 +33,14 @@ Resources:
             Method: GET
 
   GetCatById:
-  # Returns list of Neko Atsume cats and their attributes
+  # Returns a given Neko Atsume cat
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: GetCatById
       Handler: cats.get_cat_by_id_handler
       Runtime: python3.7
       CodeUri: ./api
-      Description: Returns list of Neko Atsume cats and their attributes
+      Description: Returns a given Neko Atsume cat
       Timeout: 120
       Policies:
        - AWSLambdaExecute
