@@ -16,6 +16,8 @@ def get_cat_by_id_handler(event, context):
 
     cat_id = event['pathParameters']['id']
 
+    cat_id = cat_id.replace('-', ' ')
+
     status_code, cat_found_response = read_s3_data(cat_id)
 
     response = create_response(status_code, cat_found_response)

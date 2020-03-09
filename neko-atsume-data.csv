@@ -1,67 +1,67 @@
-CatId,CatName,CatImage,MementoImage,CatDescription,CatPersonality,CatPowerLevel,Memento,CatType
-1,Snowball,Snowball.jpg,Flowered Collar.jpg,Solid White,Mellow,80,Flowered Collar,Common
-2,Smokey,Smokey.jpg,Soft Brush.jpg,Solid Black,Hot and Cold,140,Soft Brush,Common
-3,Spots,Spots.jpg,Glow Bracelet.jpg,Black & White,Joker,75,Glow Bracelet,Common
-4,Shadow,Shadow.jpg,Cicada Skin.jpg,Solid Grey,Peculiar,50,Cicada Skin,Common
-5,Sunny,Sunny.jpg,Shiny Acorn.jpg,Turkish Calico,Mischievous,120,Shiny Acorn,Common
-6,Fred,Fred.jpg,Seashell Earring.jpg,Orange Tabby,Lady-Killer,150,Seashell Earring,Common
-7,Pumpkin,Pumpkin.jpg,Aluminum Pins.jpg,Orange & White Tabby,Spacey,90,Aluminum Pins,Common
-8,Callie,Callie.jpg,Damp Matchbox.jpg,Calico,Carefree,50,Damp Matchbox,Common
-9,Tabitha,Tabitha.jpg,Random Seeds.jpg,Calico Tabby,Leisurely,40,Random Seeds,Common
-10,Bandit,Bandit.jpg,Teaser Toy TIp.jpg,Tortoiseshell,Wild at Heart,180,Teaser Toy TIp,Common
-11,Gabriel,Gabriel.jpg,Raffle Ticket.jpg,Tuxedo,Diligent,150,Raffle Ticket,Common
-12,Marshmallow,Marshmallow.jpg,Flower Bookmark.jpg,Pointed,Aloof,170,Flower Bookmark,Common
-13,Socks,Socks.jpg,Small Mittens.jpg,Black w/ White Mitts,Adventurous,70,Small Mittens,Common
-14,Lexy,Lexy.jpg,Dirty Toy Animal.jpg,Grey & White,Expensive Tastes,100,Dirty Toy Animal,Common
-15,Bolt,Bolt.jpg,Fish-stick Board.jpg,Brown Tabby,Insatiable,140,Fish-stick Board,Common
-16,Breezy,Breezy.jpg,Hourglass.jpg,Brown & White Tabby,Laid Back,30,Hourglass,Common
-17,Misty,Misty.jpg,Used Hand Warmer.jpg,Mackerel Tabby,Lazy,160,Used Hand Warmer,Common
-18,Pickles,Pickles.jpg,Silent Bell.jpg,Gray & White Tabby,Faint-Hearted,0,Silent Bell,Common
-19,Pepper,Pepper.jpg,Toy Mirror.jpg,Black w/ Odd Eyes,Shy,165,Toy Mirror,Common
-20,Patches,Patches.jpg,Colored Candles.jpg,Orange Patches,Jealous,80,Colored Candles,Common
-21,Gozer,Gozer.jpg,Scuffed Dime.jpg,Tortoiseshell Tabby,Sore Loser,155,Scuffed Dime,Common
-22,Cocoa,Cocoa.jpg,Six-sided Die.jpg,Brown Tuxedo,Indecisive,45,Six-sided Die,Common
-23,Princess,Princess.jpg,Bird Feather.jpg,Striped Torbie,Ditzy,125,Bird Feather,Common
-24,Ginger,Ginger.jpg,Clean Handkerchief.jpg,Red w/ White Mitts,Bashful,60,Clean Handkerchief,Common
-25,Peaches,Peaches.jpg,Bendy Straw.jpg,Tan & Orange,Capricious,45,Bendy Straw,Common
-26,Spud,Spud.jpg,Eyeglass Lens.jpg,Red Tortoiseshell,Cautious,80,Eyeglass Lens,Common
-27,Mack,Mack.jpg,Child's Wristband.jpg,White Mackerel,Determined,130,Child's Wristband,Common
-28,Speckles,Speckles.jpg,Damaged Spoon.jpg,Black Patches,Lonely,40,Damaged Spoon,Common
-29,Willie,Willie.jpg,Worn Postcard.jpg,Black Tabby,Crafty,75,Worn Postcard,Common
-30,Rascal,Rascal.jpg,Warped Container.jpg,Grey Tuxedo,Selfish,140,Warped Container,Common
-31,Dottie,Dottie.jpg,Bottle Cap.jpg,White Calico,Friendly,195,Bottle Cap,Common
-32,Spooky,Spooky.jpg,Gift-wrap Ribbon.jpg,Grey Tortoiseshell,Reserved,35,Gift-wrap Ribbon,Common
-33,Apricot,Apricot.jpg,Tiny Toothbrush.jpg,Tan & Orange Tabby,Slacker,10,Tiny Toothbrush,Common
-34,Ganache,Ganache.jpg,Puzzle Piece.jpg,Chocolate,Pragmatic,90,Puzzle Piece,Common
-35,Pasty,Pasty.jpg,Wilted Plant Bulb.jpg,Pastel Calico,Innocent,45,Wilted Plant Bulb,Common
-36,Chip,Chip.jpg,Ribbon Hair Band.jpg,Cap & Saddle,Young Master,60,Ribbon Hair Band,Common
-37,Macchiato,Macchiato.jpg,Leather Choker.jpg,Seal Lynx,Sourpuss,115,Leather Choker,Common
-38,Melange,Melange.jpg,Cotton Scarf.jpg,Blue Lynx,Calm,15,Cotton Scarf,Common
-39,Chocola,Chocola.jpg,Stiff Paint.jpg,Chocolate Point,Forgetful,155,Stiff Paint,Common
-40,Willow,Willow.jpg,Forgotten Key.jpg,Grey Patches,Guileless,80,Forgotten Key,Common
-41,Sooty,Sooty.jpg,Game Pieces.jpg,Black Spots,Whimsical,65,Game Pieces,Common
-42,Quicksilver,Quicksilver.jpg,Handmade Otedama.jpg,Silverpoint,Mooch,105,Handmade Otedama,Common
-43,Maple,Maple.jpg,Old Roll Film.jpg,Orange & White Bullseye,Moody,99,Old Roll Film,Common
-44,Caramel,Caramel.jpg,Sea Glass.jpg,Spotted,Tomboy,205,Sea Glass,Common
-45,Joe DiMeowgio,Joe DiMeowgio.jpg,Signed Baseball.jpg,Baseball Jersey,Team Player,28,Signed Baseball,Rare
-46,Senor Don Gato,Senor Don Gato.jpg,Feathered Hat.jpg,Mustachioed,Scheming,30,Feathered Hat,Rare
-47,Xerxes IX,Xerxes IX.jpg,Pretty Stones.jpg,Persian,Regal,70,Pretty Stones,Rare
-48,Chairman Meow,Chairman Meow.jpg,Dog Tag.jpg,Camouflage,Boorish,111,Dog Tag,Rare
-49,Saint Purrtrick,Saint Purrtrick.jpg,Mysterious Stone.jpg,Ethereal,Awe-Inspiring,222,Mysterious Stone,Rare
-50,Ms. Fortune,Ms. Fortune.jpg,Oval Coin.jpg,Gold,Charismatic,20,Oval Coin,Rare
-51,Bob the Cat,Bob the Cat.jpg,Antique Compass.jpg,Adventurer,Outdoorsy,40,Antique Compass,Rare
-52,Conductor Whiskers,Conductor Whiskers.jpg,Hand-drawn Ticket.jpg,Railway Uniform,Vigilant,50,Hand-drawn Ticket,Rare
-53,Tubbs,Tubbs.jpg,Fish Jerky.jpg,Fluffy,Finicky Feaster,130,Fish Jerky,Rare
-54,Mr. Meowgi,Mr. Meowgi.jpg,Odd Wooden Charm.jpg,Ronin,Mentoring,250,Odd Wooden Charm,Rare
-55,Lady Meow-Meow,Lady Meow-Meow.jpg,Novelty Sunglasses.jpg,American Shorthair,Diva,100,Novelty Sunglasses,Rare
-56,Guy Furry,Guy Furry.jpg,Custom Rolling Pin.jpg,Apron,Artisan,30,Custom Rolling Pin,Rare
-57,Kathmandu,Kathmandu.jpg,Elegant Paintbrush.jpg,Hunting Coat,Refined,150,Elegant Paintbrush,Rare
-58,Ramses the Great,Ramses the Great.jpg,Elegant Staff.jpg,Sphinx,Riddler,230,Elegant Staff,Rare
-59,Sassy Fran,Sassy Fran.jpg,Coffee Cup.jpg,Waitress,Enthusiastic,180,Coffee Cup,Rare
-60,Billy the Kitten,Billy the Kitten.jpg,Lucky Coin.jpg,Western Wear,Nihilistic,250,Lucky Coin,Rare
-61,Frosty,Frosty.jpg,Thaw-proof Snowman.jpg,Straw Coat,Sensitive,5,Thaw-proof Snowman,Rare
-62,Sapphire,Sapphire.jpg,Poetry Book.jpg,Classic Siamese,Naive,20,Poetry Book,Rare
-63,Jeeves,Jeeves.jpg,Silver Pocket Watch.jpg,Neatly Parted,Nimble,210,Silver Pocket Watch,Rare
-64,Bengal Jack,Bengal Jack.jpg,Old Map.jpg,Pirate,Reckless,66,Old Map,Rare
-65,Whiteshadow,Whiteshadow.jpg,Paper Shuriken.jpg,Ninja Costume,Elusive,195,Paper Shuriken,Rare
-66,Hermeowne,Hermeowne.jpg,Small Glass Bottle.jpg,Pointed Hat,Gentle,200,Small Glass Bottle,Rare
+CatId,CatName,CatDescription,CatPersonality,CatPowerLevel,CatType,Memento,CatImage,MementoImage
+1,Snowball,Solid White,Mellow,80,Common,Flowered Collar,Snowball.jpg,Flowered Collar.jpg
+2,Smokey,Solid Black,Hot and Cold,140,Common,Soft Brush,Smokey.jpg,Soft Brush.jpg
+3,Spots,Black & White,Joker,75,Common,Glow Bracelet,Spots.jpg,Glow Bracelet.jpg
+4,Shadow,Solid Grey,Peculiar,50,Common,Cicada Skin,Shadow.jpg,Cicada Skin.jpg
+5,Sunny,Turkish Calico,Mischievous,120,Common,Shiny Acorn,Sunny.jpg,Shiny Acorn.jpg
+6,Fred,Orange Tabby,Lady-Killer,150,Common,Seashell Earring,Fred.jpg,Seashell Earring.jpg
+7,Pumpkin,Orange & White Tabby,Spacey,90,Common,Aluminum Pins,Pumpkin.jpg,Aluminum Pins.jpg
+8,Callie,Calico,Carefree,50,Common,Damp Matchbox,Callie.jpg,Damp Matchbox.jpg
+9,Tabitha,Calico Tabby,Leisurely,40,Common,Random Seeds,Tabitha.jpg,Random Seeds.jpg
+10,Bandit,Tortoiseshell,Wild at Heart,180,Common,Teaser Toy TIp,Bandit.jpg,Teaser Toy TIp.jpg
+11,Gabriel,Tuxedo,Diligent,150,Common,Raffle Ticket,Gabriel.jpg,Raffle Ticket.jpg
+12,Marshmallow,Pointed,Aloof,170,Common,Flower Bookmark,Marshmallow.jpg,Flower Bookmark.jpg
+13,Socks,Black w/ White Mitts,Adventurous,70,Common,Small Mittens,Socks.jpg,Small Mittens.jpg
+14,Lexy,Grey & White,Expensive Tastes,100,Common,Dirty Toy Animal,Lexy.jpg,Dirty Toy Animal.jpg
+15,Bolt,Brown Tabby,Insatiable,140,Common,Fish-stick Board,Bolt.jpg,Fish-stick Board.jpg
+16,Breezy,Brown & White Tabby,Laid Back,30,Common,Hourglass,Breezy.jpg,Hourglass.jpg
+17,Misty,Mackerel Tabby,Lazy,160,Common,Used Hand Warmer,Misty.jpg,Used Hand Warmer.jpg
+18,Pickles,Gray & White Tabby,Faint-Hearted,0,Common,Silent Bell,Pickles.jpg,Silent Bell.jpg
+19,Pepper,Black w/ Odd Eyes,Shy,165,Common,Toy Mirror,Pepper.jpg,Toy Mirror.jpg
+20,Patches,Orange Patches,Jealous,80,Common,Colored Candles,Patches.jpg,Colored Candles.jpg
+21,Gozer,Tortoiseshell Tabby,Sore Loser,155,Common,Scuffed Dime,Gozer.jpg,Scuffed Dime.jpg
+22,Cocoa,Brown Tuxedo,Indecisive,45,Common,Six-sided Die,Cocoa.jpg,Six-sided Die.jpg
+23,Princess,Striped Torbie,Ditzy,125,Common,Bird Feather,Princess.jpg,Bird Feather.jpg
+24,Ginger,Red w/ White Mitts,Bashful,60,Common,Clean Handkerchief,Ginger.jpg,Clean Handkerchief.jpg
+25,Peaches,Tan & Orange,Capricious,45,Common,Bendy Straw,Peaches.jpg,Bendy Straw.jpg
+26,Spud,Red Tortoiseshell,Cautious,80,Common,Eyeglass Lens,Spud.jpg,Eyeglass Lens.jpg
+27,Mack,White Mackerel,Determined,130,Common,Child's Wristband,Mack.jpg,Child's Wristband.jpg
+28,Speckles,Black Patches,Lonely,40,Common,Damaged Spoon,Speckles.jpg,Damaged Spoon.jpg
+29,Willie,Black Tabby,Crafty,75,Common,Worn Postcard,Willie.jpg,Worn Postcard.jpg
+30,Rascal,Grey Tuxedo,Selfish,140,Common,Warped Container,Rascal.jpg,Warped Container.jpg
+31,Dottie,White Calico,Friendly,195,Common,Bottle Cap,Dottie.jpg,Bottle Cap.jpg
+32,Spooky,Grey Tortoiseshell,Reserved,35,Common,Gift-wrap Ribbon,Spooky.jpg,Gift-wrap Ribbon.jpg
+33,Apricot,Tan & Orange Tabby,Slacker,10,Common,Tiny Toothbrush,Apricot.jpg,Tiny Toothbrush.jpg
+34,Ganache,Chocolate,Pragmatic,90,Common,Puzzle Piece,Ganache.jpg,Puzzle Piece.jpg
+35,Pasty,Pastel Calico,Innocent,45,Common,Wilted Plant Bulb,Pasty.jpg,Wilted Plant Bulb.jpg
+36,Chip,Cap & Saddle,Young Master,60,Common,Ribbon Hair Band,Chip.jpg,Ribbon Hair Band.jpg
+37,Macchiato,Seal Lynx,Sourpuss,115,Common,Leather Choker,Macchiato.jpg,Leather Choker.jpg
+38,Melange,Blue Lynx,Calm,15,Common,Cotton Scarf,Melange.jpg,Cotton Scarf.jpg
+39,Chocola,Chocolate Point,Forgetful,155,Common,Stiff Paint,Chocola.jpg,Stiff Paint.jpg
+40,Willow,Grey Patches,Guileless,80,Common,Forgotten Key,Willow.jpg,Forgotten Key.jpg
+41,Sooty,Black Spots,Whimsical,65,Common,Game Pieces,Sooty.jpg,Game Pieces.jpg
+42,Quicksilver,Silverpoint,Mooch,105,Common,Handmade Otedama,Quicksilver.jpg,Handmade Otedama.jpg
+43,Maple,Orange & White Bullseye,Moody,99,Common,Old Roll Film,Maple.jpg,Old Roll Film.jpg
+44,Caramel,Spotted,Tomboy,205,Common,Sea Glass,Caramel.jpg,Sea Glass.jpg
+45,Joe DiMeowgio,Baseball Jersey,Team Player,28,Rare,Signed Baseball,Joe DiMeowgio.jpg,Signed Baseball.jpg
+46,Senor Don Gato,Mustachioed,Scheming,30,Rare,Feathered Hat,Senor Don Gato.jpg,Feathered Hat.jpg
+47,Xerxes IX,Persian,Regal,70,Rare,Pretty Stones,Xerxes IX.jpg,Pretty Stones.jpg
+48,Chairman Meow,Camouflage,Boorish,111,Rare,Dog Tag,Chairman Meow.jpg,Dog Tag.jpg
+49,Saint Purrtrick,Ethereal,Awe-Inspiring,222,Rare,Mysterious Stone,Saint Purrtrick.jpg,Mysterious Stone.jpg
+50,Ms. Fortune,Gold,Charismatic,20,Rare,Oval Coin,Ms. Fortune.jpg,Oval Coin.jpg
+51,Bob the Cat,Adventurer,Outdoorsy,40,Rare,Antique Compass,Bob the Cat.jpg,Antique Compass.jpg
+52,Conductor Whiskers,Railway Uniform,Vigilant,50,Rare,Hand-drawn Ticket,Conductor Whiskers.jpg,Hand-drawn Ticket.jpg
+53,Tubbs,Fluffy,Finicky Feaster,130,Rare,Fish Jerky,Tubbs.jpg,Fish Jerky.jpg
+54,Mr. Meowgi,Ronin,Mentoring,250,Rare,Odd Wooden Charm,Mr. Meowgi.jpg,Odd Wooden Charm.jpg
+55,Lady Meow-Meow,American Shorthair,Diva,100,Rare,Novelty Sunglasses,Lady Meow-Meow.jpg,Novelty Sunglasses.jpg
+56,Guy Furry,Apron,Artisan,30,Rare,Custom Rolling Pin,Guy Furry.jpg,Custom Rolling Pin.jpg
+57,Kathmandu,Hunting Coat,Refined,150,Rare,Elegant Paintbrush,Kathmandu.jpg,Elegant Paintbrush.jpg
+58,Ramses the Great,Sphinx,Riddler,230,Rare,Elegant Staff,Ramses the Great.jpg,Elegant Staff.jpg
+59,Sassy Fran,Waitress,Enthusiastic,180,Rare,Coffee Cup,Sassy Fran.jpg,Coffee Cup.jpg
+60,Billy the Kitten,Western Wear,Nihilistic,250,Rare,Lucky Coin,Billy the Kitten.jpg,Lucky Coin.jpg
+61,Frosty,Straw Coat,Sensitive,5,Rare,Thaw-proof Snowman,Frosty.jpg,Thaw-proof Snowman.jpg
+62,Sapphire,Classic Siamese,Naive,20,Rare,Poetry Book,Sapphire.jpg,Poetry Book.jpg
+63,Jeeves,Neatly Parted,Nimble,210,Rare,Silver Pocket Watch,Jeeves.jpg,Silver Pocket Watch.jpg
+64,Bengal Jack,Pirate,Reckless,66,Rare,Old Map,Bengal Jack.jpg,Old Map.jpg
+65,Whiteshadow,Ninja Costume,Elusive,195,Rare,Paper Shuriken,Whiteshadow.jpg,Paper Shuriken.jpg
+66,Hermeowne,Pointed Hat,Gentle,200,Rare,Small Glass Bottle,Hermeowne.jpg,Small Glass Bottle.jpg
