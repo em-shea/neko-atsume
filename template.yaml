@@ -60,7 +60,8 @@ Resources:
     Type: AWS::ApiGateway::UsagePlan
     Properties: 
       ApiStages: 
-        - Prod
+        - ApiId: neko-api
+        - Stage: Prod
       Description: Set rate limit for API to 100 requests per minute
       Throttle: 
         RateLimit: 100
