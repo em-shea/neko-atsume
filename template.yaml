@@ -62,8 +62,8 @@ Resources:
     Type: AWS::ApiGateway::UsagePlan
     Properties: 
       ApiStages: 
-        - ApiId: 10p12lxw3e
+        - ApiId: !Ref CatsApiId
           Stage: Prod
-      Description: Set rate limit for API to 100 requests per minute
+      Description: Set rate limit for API to 120 requests per minute
       Throttle: 
-        RateLimit: 100
+        RateLimit: 2
