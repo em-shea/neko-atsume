@@ -34,7 +34,7 @@ def read_s3_data(cat_id=None):
 
     cat_list = []
     for row in reader:
-        if cat_id is None or row['CatId'] or row['CatName'] == cat_id:
+        if cat_id is None or row['CatId'] == cat_id or row['CatName'].lower() == cat_id.lower():
             # Example image link: https://neko-atsume.s3.amazonaws.com/img/Aluminum+Pins.jpg
             row['CatImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['CatImage'].replace(" ", "+")
             row['MementoImage'] = "https://neko-atsume.s3.amazonaws.com/img/" + row['MementoImage'].replace(" ", "+")
@@ -45,7 +45,7 @@ def read_s3_data(cat_id=None):
         if len(cat_list) == 1:
             return 200, cat_list[0]
         else:
-            error_message = {"error":"Cat not found. Enter an id between 1-66."}
+            error_message = {"error":"Cat not found. Request a valid cat name or cat id (between 1-66)."}
             return 404, error_message 
 
 def create_response(status_code, response_body):
