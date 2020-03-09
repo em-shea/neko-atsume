@@ -6,6 +6,8 @@ Parameters:
     Type: String
   WordsBucketKey:
     Type: String
+  CatsApiId:
+    Type: String
 
 Resources:
   ListCats:
@@ -60,8 +62,8 @@ Resources:
     Type: AWS::ApiGateway::UsagePlan
     Properties: 
       ApiStages: 
-        - ApiId: neko-api
-        - Stage: Prod
+        - ApiId: 10p12lxw3e
+          Stage: Prod
       Description: Set rate limit for API to 100 requests per minute
       Throttle: 
         RateLimit: 100
