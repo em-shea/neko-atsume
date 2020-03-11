@@ -8,9 +8,7 @@ import urllib.parse
 def list_cats_handler(event, context):
 
     object_type = "cat"
-
     status_code, cat_list = read_s3_data(object_type)
-
     response = create_response(status_code, cat_list)
 
     return response
@@ -18,11 +16,8 @@ def list_cats_handler(event, context):
 def get_cat_by_id_handler(event, context):
 
     object_type = "cat"
-
     cat_id = urllib.parse.unquote(event['pathParameters']['id'])
-
     status_code, cat_found_response = read_s3_data(object_type, cat_id)
-
     response = create_response(status_code, cat_found_response)
 
     return response
@@ -30,9 +25,7 @@ def get_cat_by_id_handler(event, context):
 def list_goodies_handler(event, context):
 
     object_type = "goody"
-
     status_code, goodies_list = read_s3_data(object_type)
-
     response = create_response(status_code, goodies_list)
 
     return response
@@ -40,11 +33,8 @@ def list_goodies_handler(event, context):
 def get_goodies_by_id_handler(event, context):
 
     object_type = "goody"
-
     goody_id = urllib.parse.unquote(event['pathParameters']['id'])
-
     status_code, goody_found_response = read_s3_data(object_type, goody_id)
-
     response = create_response(status_code, goody_found_response)
 
     return response
@@ -76,8 +66,15 @@ def read_s3_data(object_type, item_id=None):
 
     item_list = []
     for row in reader:
+        # Check if no item_id has been passed, or if an item_id has been passed and is equal to the row's name or id
         if item_id is None or row[id_row] == item_id or row[name_row].lower() == item_id.lower():
             row = image_transform_function(row)
+            # Convert Yes/No in CSV to True/False boolean
+            if 'AttractsRareCats' in row:
+                if row['AttractsRareCats'] == 'Yes':
+                    row['AttractsRareCats'] = True
+                else: 
+                    row['AttractsRareCats'] = False
             item_list.append(row)
     if item_id is None:
         return 200, item_list
