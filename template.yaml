@@ -90,7 +90,7 @@ Resources:
   # Returns a given Neko Atsume goody from goody id or goody name
     Type: 'AWS::Serverless::Function'
     Properties:
-      FunctionName: GetCatById
+      FunctionName: GetGoodyById
       Handler: get_items.get_goodies_by_id_handler
       Runtime: python3.7
       CodeUri: ./api
@@ -103,7 +103,7 @@ Resources:
           GOODIES_BUCKET_NAME: !Ref GoodiesBucketName
           GOODIES_BUCKET_KEY: !Ref GoodiesBucketKey
       Events:
-        GetGoodiesByIdAPI:
+        GetGoodyByIdAPI:
           # An API endpoint that responds to HTTP GET and returns goodies by id or name
           Type: Api
           Properties:
