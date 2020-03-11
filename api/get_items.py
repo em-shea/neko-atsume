@@ -3,6 +3,7 @@ import os
 import csv
 import json
 import boto3
+import urllib.parse
 
 def list_cats_handler(event, context):
 
@@ -18,9 +19,7 @@ def get_cat_by_id_handler(event, context):
 
     object_type = "cat"
 
-    cat_id = event['pathParameters']['id']
-
-    cat_id = cat_id.replace('-', ' ')
+    cat_id = urllib.parse.unquote(event['pathParameters']['id'])
 
     status_code, cat_found_response = read_s3_data(object_type, cat_id)
 
@@ -42,9 +41,7 @@ def get_goodies_by_id_handler(event, context):
 
     object_type = "goody"
 
-    goody_id = event['pathParameters']['id']
-
-    goody_id = goody_id.replace('-', ' ')
+    goody_id = urllib.parse.unquote(event['pathParameters']['id'])
 
     status_code, goody_found_response = read_s3_data(object_type, goody_id)
 
