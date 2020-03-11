@@ -1,3 +1,5 @@
-# neko-atsume
+# Neko Atsume API Backend
 
-https://neko-atsume.emshea.com/api
+neko-atsume.emshea.com
+
+Frontend repo: https://github.com/em-shea/neko-api-frontend
