@@ -2,9 +2,13 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Neko Atsume API
 Parameters:
-  WordsBucketName:
+  CatsBucketName:
     Type: String
-  WordsBucketKey:
+  CatsBucketKey:
+    Type: String
+  GoodiesBucketName:
+    Type: String
+  GoodiesBucketKey:
     Type: String
   CatsApiId:
     Type: String
@@ -24,8 +28,8 @@ Resources:
        - AWSLambdaExecute
       Environment:
         Variables:
-          WORDS_BUCKET_NAME: !Ref WordsBucketName
-          WORDS_BUCKET_KEY: !Ref WordsBucketKey
+          CATS_BUCKET_NAME: !Ref CatsBucketName
+          CATS_BUCKET_KEY: !Ref CatsBucketKey
       Events:
         ListCatsAPI:
           # An API endpoint that responds to HTTP GET and returns all cats
@@ -48,11 +52,11 @@ Resources:
        - AWSLambdaExecute
       Environment:
         Variables:
-          WORDS_BUCKET_NAME: !Ref WordsBucketName
-          WORDS_BUCKET_KEY: !Ref WordsBucketKey
+          CATS_BUCKET_NAME: !Ref CatsBucketName
+          CATS_BUCKET_KEY: !Ref CatsBucketKey
       Events:
         GetCatByIdAPI:
-          # An API endpoint that responds to HTTP GET and returns cats by id or name
+          # An API endpoint that responds to HTTP GET and returns cats by id or
           Type: Api
           Properties:
             Path: /cats/{id}
@@ -72,10 +76,10 @@ Resources:
        - AWSLambdaExecute
       Environment:
         Variables:
-          WORDS_BUCKET_NAME: !Ref WordsBucketName
-          WORDS_BUCKET_KEY: !Ref WordsBucketKey
+          GOODIES_BUCKET_NAME: !Ref GoodiesBucketName
+          GOODIES_BUCKET_KEY: !Ref GoodiesBucketKey
       Events:
-        ListCatsAPI:
+        ListGoodiesAPI:
           # An API endpoint that responds to HTTP GET and returns all goodies
           Type: Api
           Properties:
@@ -96,10 +100,10 @@ Resources:
        - AWSLambdaExecute
       Environment:
         Variables:
-          WORDS_BUCKET_NAME: !Ref WordsBucketName
-          WORDS_BUCKET_KEY: !Ref WordsBucketKey
+          GOODIES_BUCKET_NAME: !Ref GoodiesBucketName
+          GOODIES_BUCKET_KEY: !Ref GoodiesBucketKey
       Events:
-        GetCatByIdAPI:
+        GetGoodiesByIdAPI:
           # An API endpoint that responds to HTTP GET and returns goodies by id or name
           Type: Api
           Properties:
