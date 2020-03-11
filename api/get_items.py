@@ -32,7 +32,7 @@ def list_goodies_handler(event, context):
 
     object_type = "goody"
 
-    status_code, cat_list = read_s3_data(object_type)
+    status_code, goodies_list = read_s3_data(object_type)
 
     response = create_response(status_code, goodies_list)
 
