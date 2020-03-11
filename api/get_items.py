@@ -54,19 +54,19 @@ def get_goodies_by_id_handler(event, context):
 
 def read_s3_data(object_type, item_id=None):
 
-    if object_type = "cat":
+    if object_type == "cat":
         s3_bucket_name = os.environ['CATS_BUCKET_NAME']
         s3_bucket_key = os.environ['CATS_BUCKET_KEY']
-        id_row = row['CatId']
-        name_row = row['CatName']
+        id_row = 'CatId'
+        name_row = 'CatName'
         image_transform_function = cat_image_transform
         error_message = "Cat not found. Request a valid cat name (not case sensitive) or cat id (between 1-66)."
 
     else:
         s3_bucket_name = os.environ['GOODIES_BUCKET_NAME']
         s3_bucket_key = os.environ['GOODIES_BUCKET_KEY']
-        id_row = row['GoodyId']
-        name_row = row['GoodyName']
+        id_row = 'GoodyId'
+        name_row = 'GoodyName'
         image_transform_function = goody_image_transform
         error_message = "Goody not found. Request a valid goody name (not case sensitive) or goody id (between 1-185)."
 
@@ -79,7 +79,7 @@ def read_s3_data(object_type, item_id=None):
 
     item_list = []
     for row in reader:
-        if item_id is None or id_row == item_id or name_row.lower() == item_id.lower():
+        if item_id is None or row[id_row] == item_id or row[name_row].lower() == item_id.lower():
             row = image_transform_function(row)
             item_list.append(row)
     if item_id is None:
