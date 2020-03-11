@@ -15,14 +15,14 @@ Parameters:
 
 Resources:
   ListCats:
-  # Returns list of Neko Atsume cats and their attributes
+  # Returns list of Neko Atsume cats
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: ListCats
       Handler: get_items.list_cats_handler
       Runtime: python3.7
       CodeUri: ./api
-      Description: Returns list of Neko Atsume cats and their attributes
+      Description: Returns list of Neko Atsume cats
       Timeout: 120
       Policies:
        - AWSLambdaExecute
@@ -56,21 +56,21 @@ Resources:
           CATS_BUCKET_KEY: !Ref CatsBucketKey
       Events:
         GetCatByIdAPI:
-          # An API endpoint that responds to HTTP GET and returns cats by id or
+          # An API endpoint that responds to HTTP GET and returns cats by id or name
           Type: Api
           Properties:
             Path: /cats/{id}
             Method: GET
   
   ListGoodies:
-  # Returns list of Neko Atsume goodies and their attributes
+  # Returns list of Neko Atsume goodies
     Type: 'AWS::Serverless::Function'
     Properties:
       FunctionName: ListGoodies
       Handler: get_items.list_goodies_handler
       Runtime: python3.7
       CodeUri: ./api
-      Description: Returns list of Neko Atsume goodies and their attributes
+      Description: Returns list of Neko Atsume goodies
       Timeout: 120
       Policies:
        - AWSLambdaExecute
@@ -109,7 +109,7 @@ Resources:
           Properties:
             Path: /goodies/{id}
             Method: GET
-            
+
   setAPIGRateLimit:
     Type: AWS::ApiGateway::UsagePlan
     Properties: 
